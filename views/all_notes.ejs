@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Notes</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="notes-container">
+        <div class="header">
+            <h1>Your Notes</h1>
+            <a href="/"><h3>Go To Home</h3></a>
+        </div>
+
+        <div class="notes">
+            <% if (notes.length === 0) { %>
+                <h1>No notes yet</h1>
+            <% } else { %>
+                <% notes.forEach(note => { %>
+                    <div class="note">
+                        <h2>Title: <%= note.title %></h2>
+                        <p>Content: <%= note.content %></p>
+
+                        <div class="controls">
+                            <!-- Update -->
+                            <a href="/update/<%= note._id %>">Update</a>
+
+                            <!-- Delete -->
+                            <form action="/delete/<%= note._id%>" method="post" style="display:inline;">
+                                <button type="submit">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

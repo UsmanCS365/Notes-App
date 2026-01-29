@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="heading">
+            <h1>Create New Note</h1>
+        </div>
+    <div class="form-container">
+    <form id="my-form" action="/notes" method="post">
+        <input id="title" type="text" name="title" placeholder="Enter Title">
+        <textarea  name="content" id="content" placeholder="Content goes here"></textarea>
+        <div class="submit-btn-container">
+        <button id="submit-btn" type="submit">Create Note</button>
+        </div>
+        <div id="notes-page">
+    <a href="/notes">
+        <button>View Notes</button>
+    </a>
+    </div>
+    </form>
+    
+    </div>
+    
+    </div>
+</body>
+</html>

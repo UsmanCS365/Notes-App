@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 32px;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    color: white;
+    
+}
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    
+}
+.heading h1{
+    font-size: 2em;
+    word-spacing: 1em;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: slateblue;
+}
+input{
+    margin-top: 20px;
+    display: block;
+}
+
+#title{
+    background-color: black;
+    color: white;
+    font-size: 2em;
+}
+#content{
+background-color: black;
+    color: white;
+    font-size: 2em;
+    resize: none;
+}
+.submit-btn-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#submit-btn{
+    background-color: blue;
+    color: white;
+    padding: 0 8px;
+    margin-top: 4px;
+
+}
+#notes-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#notes-page button{
+        background-color: orange;
+    color: white;
+    padding: 0 8px;
+    margin-top: 4px;
+}
+.notes-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.notes-container .header{
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.notes h1{
+    margin-top: 20px;
+}
+.notes{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+.note{
+    border: 2px solid white;
+    padding: 40px;
+    animation-name: come;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    
+    
+}
+@keyframes come{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}

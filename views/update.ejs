@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="update-container">
+        <div>
+            <h1>Update Note Data</h1>
+        </div>
+        <div class="update-form">
+            <form action="/update/<%= note._id%>" method="post">
+                <input type="text" value="<%= note.title%>" placeholder="Enter new title" name="newtitle">    
+                <textarea name="newcontent" id="">Enter new content</textarea>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
