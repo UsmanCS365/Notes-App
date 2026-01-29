@@ -5,7 +5,7 @@ const cookieParser =require("cookie-parser")
 const dotenv =require("dotenv")
 const connectToDb =require("./config/db")
 const app =express()
-const port =3000
+const port =process.env.PORT
 dotenv.config()
 connectToDb()
 app.set("view engine", "ejs")
